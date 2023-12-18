@@ -1,0 +1,22 @@
+server:
+  port: 9097
+spring:
+  main:
+    allow-circular-references: true
+  application:
+    name: web-01
+  datasource:
+    url: jdbc:mysql://localhost:3306/school_proje?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: omeR%50hajk
+    driverClassName: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
